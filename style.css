@@ -1,0 +1,9 @@
+.paymentmethods{
+    display: flex;
+    justify-content: left;
+ 
+}
+.comment{
+    display: flex;
+    justify-content: left;
+}

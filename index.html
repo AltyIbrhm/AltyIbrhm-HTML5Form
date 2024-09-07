@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="row g-3 needs-validation border m-2" novalidate>
+        <h1 class="bg-light m-0 border-bottom">Payment form example</h1>
+        <div class="border border-2  mt-1 p-2" style=" background-color: #dd9b87;">some fields are missing
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Card #</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="XXXXXXXXXXXXXXXX" required>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom02" class="form-label">CVC #</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="0000" required>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustomUsername" class="form-label">Amount</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">$</span>
+                <input type="text" class="form-control" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" placeholder="Amount" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Last Name" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+
+        <div class="form-check col-md-3 paymentmethods">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    image
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    image
+                </label>
+            </div>
+        </div>
+        <div class="form-check col-md-3 paymentmethods"></div>
+        <div class="form-floating col-md-6 comment">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Message</label>
+        </div>
+        <div class="col-12 bg-light mt-2 border-bottom d-flex justify-content-end">
+            <button class="btn btn-secondary m-2" type="submit">Cancel</button>
+            <button class="btn btn-primary m-2" type="submit">Send</button>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
